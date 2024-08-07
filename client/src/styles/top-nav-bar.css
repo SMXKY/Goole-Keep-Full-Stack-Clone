@@ -1,0 +1,255 @@
+.top-nav-bar-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.top-nav-bar-btn {
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: white;
+  position: relative;
+}
+
+.icon-img {
+  width: 2.5rem;
+  margin-left: 0.35em;
+}
+
+.top-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0px;
+  height: 4rem;
+  border-bottom: solid 0.5px var(--divider-color);
+  padding: 0rem 0.85rem;
+  padding-right: 0.5rem;
+  padding-top: 0.1rem;
+  z-index: 500;
+  background-color: white;
+}
+/*.top-nav-bar {
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.515);
+}*/
+.top-nav-bar .left {
+  display: flex;
+}
+
+.app-logo,
+.search-bar,
+.right,
+.options,
+.account {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-left: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.user-profile {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin-left: 0.2rem;
+}
+
+.google-apps {
+  margin-right: 0.1rem;
+}
+
+.options {
+  justify-content: space-between;
+  margin-right: 1.6rem;
+  width: 9rem;
+}
+
+.account .user-info-tool-tip .top-nav-bar-btn .top-nav-bar-tool-tip {
+  text-align: left;
+  font-size: 0.7rem;
+  right: 1.2rem;
+  z-index: 100;
+}
+
+.options svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.search-bar {
+  background-color: red;
+  flex: 1;
+  margin-left: 5.45rem;
+  margin-right: 6.75rem;
+  background-color: #f1f3f4;
+  padding: 0rem 0.6rem;
+  border-radius: 0.5rem;
+  height: 3rem;
+  justify-content: space-between;
+}
+
+.search-bar button {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #f1f3f4;
+}
+
+.search-bar input {
+  flex: 1;
+  margin: 0rem 0.5rem;
+  font-size: 1.02rem;
+  border: none;
+  background-color: #f1f3f4;
+  padding-bottom: 0.2rem;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.top-nav-bar-btn:hover {
+  background-color: #eaebec;
+}
+
+.top-nav-bar-tool-tip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.67);
+  padding: 0.3rem;
+  color: white;
+  text-wrap: nowrap;
+  border-radius: 0.3rem;
+  bottom: -1.9rem;
+  opacity: 0;
+  transition-delay: 0.8s;
+  cursor: pointer;
+  display: none;
+  font-size: 0.7rem;
+}
+
+.top-nav-bar-btn:hover .top-nav-bar-tool-tip {
+  display: block;
+  opacity: 1;
+  z-index: 1;
+}
+
+.left .top-nav-bar-btn .top-nav-bar-tool-tip {
+  margin-left: 1rem;
+}
+
+.keep-logo {
+  position: relative;
+}
+
+.keep-logo {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.keep-logo span {
+  background-color: black;
+  color: #f1f3f4;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  display: block;
+  justify-content: unset;
+  position: absolute;
+  bottom: -1.2rem;
+  right: -1.2rem;
+  transition-delay: 0.8s;
+  opacity: 0;
+}
+
+.keep-logo:hover .keep-tool-tip {
+  opacity: 1;
+}
+
+.user-tool-tip-head {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.2rem;
+}
+
+.user-tool-tip-info {
+  margin-top: 0.2rem;
+  color: rgb(169, 169, 169);
+  font-size: 0.68rem;
+}
+
+.logo-text:active {
+  text-decoration: underline;
+}
+
+.off {
+  display: none;
+}
+
+@media (max-width: 1065px) {
+  .search-bar {
+    margin: 0rem 1.5rem;
+  }
+}
+
+@media (max-width: 786px) {
+  .search-bar {
+    margin: 0;
+    flex: unset;
+    padding: 0rem;
+    height: 0rem;
+    background-color: white;
+    flex: 1;
+    justify-content: right;
+  }
+
+  .search-bar input {
+    display: none;
+  }
+
+  .search-bar .top-nav-bar-btn {
+    background-color: white;
+  }
+
+  .top-nav-bar-btn:hover {
+    background-color: #eaebec;
+  }
+}
+
+@media (max-width: 550px) {
+  .responsive-top-nav-btn {
+    display: none;
+  }
+
+  .right {
+    justify-content: right;
+  }
+
+  .options {
+    width: unset;
+    margin-right: 0rem;
+  }
+}
+
+@media (max-width: 452px) {
+  .google-apps {
+    display: none;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+  }
+}

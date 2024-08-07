@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.15s;
+  font-family: "Product Sans", sans-serif;
+}
+
+img {
+  object-fit: cover;
+}
+
+:root {
+  --grey-icon-color: rgb(173, 173, 174);
+  --divider-color: rgb(223, 222, 222);
+  --text-color: rgb(83, 86, 91);
+}
+
+body {
+  padding-top: 4rem;
+  padding-bottom: 100rem;
+}
